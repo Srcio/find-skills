@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "llamacpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama-server (local)",
+      "options": {
+        "baseURL": "http://host.docker.internal:8080/v1"
+      },
+      "models": {
+        "D:\\Qwen3.8-Flash-Next-Uncensored.i1-IQ4_XS.gguf": {
+          "name": "Qwen3.8-Flash-Next-Uncensored (i1-IQ4_XS, local)",
+          "tool_call": true,
+          "reasoning": false,
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          }
+        }
+      }
+    }
+  },
+  "model": "llamacpp/D:\\Qwen3.8-Flash-Next-Uncensored.i1-IQ4_XS.gguf"
+}
